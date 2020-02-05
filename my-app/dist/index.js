@@ -46,16 +46,12 @@ function (_React$Component) {
   _createClass(Square, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
       return dom("button", {
         className: "square",
         onClick: function onClick() {
-          return _this2.setState({
-            value: 'X'
-          });
+          alert('click');
         }
-      }, this.state.value);
+      }, this.props.value);
     }
   }]);
 
@@ -68,27 +64,22 @@ function (_React$Component2) {
   _inherits(Board, _React$Component2);
 
   function Board(props) {
-    var _this3;
+    var _this2;
 
     _classCallCheck(this, Board);
 
-    _this3 = _possibleConstructorReturn(this, _getPrototypeOf(Board).call(this, props));
-    _this3.state = {
+    _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Board).call(this, props));
+    _this2.state = {
       squares: Array(9).fill(null)
     };
-    return _this3;
+    return _this2;
   }
 
   _createClass(Board, [{
     key: "renderSquare",
     value: function renderSquare(i) {
-      var _this4 = this;
-
       return dom(Square, {
-        value: this.state.squares[i],
-        onClick: function onClick() {
-          return _this4.handleClick(i);
-        }
+        value: i
       });
     }
   }, {
