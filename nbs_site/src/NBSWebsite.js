@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './images_icons/nbs_icon.ico'
 import COMPANY_NAME from './common/StringConstants.js';
+import './Assets/css/default.min.css';
 
-function NBSWebsite() {
-    return (
-        <div className="App">
-            Test
-        </div>
-    );
+class NBSWebsite extends Component {
+    render() {
+        return (
+            <div className="NBSWebsite">
+
+            </div>
+        );
+    }
 }
 
 export default NBSWebsite;
