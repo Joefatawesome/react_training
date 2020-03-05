@@ -3,13 +3,17 @@ import {
     Link
 } from 'react-router-dom';
 
+import nbs_icon from '../../images_icons/nbs_icon.ico';
+
 class Header extends Component {
     render() {
         return (
             <header>
-                <div className="logo">
-                    LOGO
-                </div>
+                {/*<img src={nbs_icon} alt={'Logo'}>
+                </img>*/}
+                {/*<div className="logo">*/}
+                {/*    LOGO*/}
+                {/*</div>*/}
                 <nav>
                     <ul>
                         <li className="first">
