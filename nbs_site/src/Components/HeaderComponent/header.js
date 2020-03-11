@@ -34,11 +34,12 @@ class Header extends Component {
         img.onload = () => {
             ctx.drawImage(img, 0, -75);
             //https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
-            //drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth);
+            //drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
             //sx/sy is the starting point of the cropping square
             //sWidth/sHeight is the width and height of the cropping square
             //dx/dy is the starting point of the drawn image
             //dWidth/dHeight is the width and height of the displayed imaged
+            //ctx.drawImage(img, 0, 0, MaxLength, MaxHeight, left margin, top margin, 50, 50);
         }
     }
 
