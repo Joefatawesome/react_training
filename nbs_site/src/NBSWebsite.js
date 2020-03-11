@@ -11,7 +11,6 @@ import HomePage from "./Components/Pages/homePage";
 import Products from "./Components/Pages/products";
 
 import './Assets/css/default.min.css';
-import COMPANY_NAME from './common/StringConstants.js';
 
 class NBSWebsite extends Component {
     render() {
