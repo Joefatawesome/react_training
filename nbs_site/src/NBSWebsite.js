@@ -5,7 +5,7 @@ import {
     Link
 } from 'react-router-dom';
 
-import Header from './Components/HeaderCompent/header';
+import Header from './Components/HeaderComponent/header';
 import Footer from "./Components/FooterComponent/footer";
 import HomePage from "./Components/Pages/homePage";
 import Products from "./Components/Pages/products";
