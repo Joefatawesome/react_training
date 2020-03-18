@@ -32,7 +32,7 @@ class Header extends Component {
     componentDidMount() {
         ctx = canvas.getContext("2d");
         img.onload = () => {
-            ctx.drawImage(img, 0, -75);
+            ctx.drawImage(img, 0, 0, 256, 256, 0, -15, 50, 50);
             //https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
             //drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
             //sx/sy is the starting point of the cropping square
