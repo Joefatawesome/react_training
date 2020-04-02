@@ -3,7 +3,7 @@ import {
     Link
 } from 'react-router-dom';
 
-import nbs_icon from '../../images_icons/nbs_icon.ico';
+import nbs_icon from '../../imagesIcons/rectangles_icon_final.png';
 
 const iconWidth = 255;
 const iconHeight = 110;
@@ -18,9 +18,6 @@ class Header extends Component {
 
         img = new Image();
         img.src = nbs_icon;
-        /*this.setImgRef = element => {
-            img  = element;
-        };*/
 
         canvas = null;
         this.setCanvasRef = element => {
@@ -32,7 +29,7 @@ class Header extends Component {
     componentDidMount() {
         ctx = canvas.getContext("2d");
         img.onload = () => {
-            ctx.drawImage(img, 0, 0, 256, 256, 0, -15, 50, 50);
+            ctx.drawImage(img, 0, 0, 1563, 879, -45, -22, 250, 150);
             //https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage
             //drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
             //sx/sy is the starting point of the cropping square
