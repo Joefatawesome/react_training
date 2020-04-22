@@ -1,20 +1,30 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 
 class News extends Component {
     render() {
         return (
             <div className="container-fluid">
                 <h1>
-                    News
+                    Recent Newsletters
                 </h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
+                <ul>
+                    <li className="first">
+                        <Link to='$'>Unemployment for Self Employed Individuals</Link>
+                    </li>
+                    <li>
+                        <Link to='$'>Economic Stimulus Payment Site for Filers and Non-Filers</Link>
+                    </li>
+                    <li>
+                        <Link to={'$'}>Economic Injury Disaster Loan Application</Link>
+                    </li>
+                    <li>
+                        <Link to={'$'}>California Pandemic Unemployment Assistance</Link>
+                    </li>
+                    <li className="last">
+                        <Link to='$'>IRS Mail Scams 10-13-2016</Link>
+                    </li>
+                </ul>
             </div>
         );
     }
