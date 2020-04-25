@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react_training/static/css/main.f039cfb6.chunk.css",
+    "main.js": "/react_training/static/js/main.91ddc945.chunk.js",
+    "main.js.map": "/react_training/static/js/main.91ddc945.chunk.js.map",
+    "runtime-main.js": "/react_training/static/js/runtime-main.4f199055.js",
+    "runtime-main.js.map": "/react_training/static/js/runtime-main.4f199055.js.map",
+    "static/js/2.3cc17584.chunk.js": "/react_training/static/js/2.3cc17584.chunk.js",
+    "static/js/2.3cc17584.chunk.js.map": "/react_training/static/js/2.3cc17584.chunk.js.map",
+    "index.html": "/react_training/index.html",
+    "precache-manifest.c9559236fac5d0f0b9b6016e6bf9e1f5.js": "/react_training/precache-manifest.c9559236fac5d0f0b9b6016e6bf9e1f5.js",
+    "service-worker.js": "/react_training/service-worker.js",
+    "static/css/main.f039cfb6.chunk.css.map": "/react_training/static/css/main.f039cfb6.chunk.css.map",
+    "static/js/2.3cc17584.chunk.js.LICENSE.txt": "/react_training/static/js/2.3cc17584.chunk.js.LICENSE.txt",
+    "static/media/rectangles_icon_final.png": "/react_training/static/media/rectangles_icon_final.b0c4f911.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f199055.js",
+    "static/js/2.3cc17584.chunk.js",
+    "static/css/main.f039cfb6.chunk.css",
+    "static/js/main.91ddc945.chunk.js"
+  ]
+}
