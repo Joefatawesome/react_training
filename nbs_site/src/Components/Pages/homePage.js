@@ -4,11 +4,20 @@ class HomePage extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <h1>
-                    Norwalk Business Service
-                </h1>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    <br/>
+                    Norwalk Business Services, Inc. has been engaged in the practice of tax, accounting, and business
+                    management since 1955. We are one of the largest business service, tax, and accounting practices in
+                    this area. We offer in house computerized tax return preparation, live payroll services, live and
+                    after the fact accounting, as well as other business consulting. Our company presents a personalized
+                    approach to your personal and professional accounting and tax needs. Our staff of trained personnel
+                    will help you to decide exactly what your needs are and provide you with the information needed to
+                    operate your business more efficiently. Our tax preparers are trained to prepare your tax return
+                    professionally using all the allowable deductions to reduce your income and thus your tax to the
+                    lowest allowable amount.
+                    <br/>
+                    <br/>
+                    Thank you for your interest in our firm.
                 </p>
             </div>
         );
