@@ -40,7 +40,7 @@ class Header extends Component {
         ctx.fillStyle = "white";
         ctx.fillText("Norwalk Business Service", 100, 65);
     }
-
+    //TODO: Modernize here.
     render() {
         return (
             <header>
