@@ -3,6 +3,8 @@ $white: #FFFFFF;
 $slightGrey: #e6e6e6;
 $darkGrey: #333;
 $red: #ff1755;
+$green: #02ff00;
+$blue: #0800ff;
 
 @mixin translateY($e) {
   -webkit-transform: translateY($e);
@@ -30,7 +32,7 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: $red;
+    color: $green;
     @include transition(.4s ease-in-out);
   }
 }
