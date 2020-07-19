@@ -1,20 +1,18 @@
 'use strict';
 
 // dependencies
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var minifyCSS = require('gulp-clean-css');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var changed = require('gulp-changed');
-
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const minifyCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
+const changed = require('gulp-changed');
 
 
 ///////////////
 // - SCSS/CSS
 ///////////////
 
-var SCSS_SRC = './src/Assets/scss/**/*.scss';
+var SCSS_SRC = './src/Assets/scss/*.scss';
 var SCSS_DEST = './src/Assets/css';
 
 // Compile SCSS
