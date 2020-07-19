@@ -1,16 +1,16 @@
 {
   "name": "nbs_site",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/polyfill": "^7.10.4",
+    "@babel/polyfill": "^7.8.3",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
+    "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "gh-pages": "^2.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
   },
   "scripts": {
@@ -37,15 +37,15 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "browser-sync": "^2.26.10",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
