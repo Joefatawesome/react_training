@@ -12,7 +12,7 @@ let ctx;
 
 
 class Header extends Component {
-    constructor(props) {
+   constructor(props) {
         super(props);
 
         img = new Image();
@@ -43,11 +43,16 @@ class Header extends Component {
     }
     //TODO: Modernize here.
     render() {
+        function myFunction() {
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
         return (
             <header>
                 <canvas ref={this.setCanvasRef} width={900} height={90}/>
                 <div className="dropdown" style={{float: "right"}}>
-                    <button onClick="myFunction()" className="dropbtn">Dropdown</button>
+                    <button onClick={myFunction} className="dropbtn">Dropdown</button>
                     <div id="myDropdown" className="dropdown-content">
                         <li className="first">
                             <Link to='/'>Home</Link>
@@ -70,11 +75,7 @@ class Header extends Component {
         );
     }
 
-/*    /!* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content *!/
-    myFunction() =>{
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
+/*
 
 // Close the dropdown menu if the user clicks outside of it
     window.onclick = function(event) {
@@ -91,22 +92,5 @@ class Header extends Component {
     }*/
 
 }
-/*<ul>
-    <li className="first">
-        <Link to='/'>Home</Link>
-    </li>
-    <li>
-        <Link to='/News'>News</Link>
-    </li>
-    <li>
-        <Link to={'/Forms'}>Client Forms</Link>
-    </li>
-    <li>
-        <Link to={'/About'}>About Us</Link>
-    </li>
-    <li className="last">
-        <Link to='/Contact'>Contact Info</Link>
-    </li>
-</ul>*/
 
 export default Header;
