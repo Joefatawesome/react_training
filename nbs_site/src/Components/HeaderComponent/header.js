@@ -12,7 +12,7 @@ let ctx;
 
 
 class Header extends Component {
-   constructor(props) {
+    constructor(props) {
         super(props);
 
         img = new Image();
@@ -41,12 +41,26 @@ class Header extends Component {
         ctx.fillStyle = $darkGrey;
         ctx.fillText("Norwalk Business Service", 100, 52);
     }
+
     //TODO: Modernize here.
     render() {
         function myFunction() {
             /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
             document.getElementById("myDropdown").classList.toggle("show");
         }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropDowns = document.getElementsByClassName("dropdown-content");
+                let i;
+                for (i = 0; i < dropDowns.length; i++) {
+                    const openDropdown = dropDowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
 
         return (
             <header>
@@ -75,21 +89,9 @@ class Header extends Component {
         );
     }
 
-/*
+    /*
 
-// Close the dropdown menu if the user clicks outside of it
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }*/
+    */
 
 }
 
