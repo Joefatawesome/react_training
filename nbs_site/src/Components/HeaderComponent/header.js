@@ -50,6 +50,7 @@ class Header extends Component {
         }
 
         window.onclick = function (event) {
+            //TODO: fix logic so it doesn't close if the user clicks within the dropDown
             if (!event.target.matches('.dropbtn')) {
                 const dropDowns = document.getElementsByClassName("dropdown-content");
                 let i;
