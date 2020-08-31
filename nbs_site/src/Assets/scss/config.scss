@@ -3,8 +3,12 @@ $white: #FFFFFF;
 $slightGrey: #e6e6e6;
 $darkGrey: #333;
 $red: #ff1755;
-$green: #02ff00;
+$lightGreen: #02ff00;
 $blue: #0800ff;
+$lightBlue: #79c0ff;
+$darkGreen: #004704;
+$darkYellow: #d0d000;
+$fadedGreen: #87e287;
 
 @mixin translateY($e) {
   -webkit-transform: translateY($e);
@@ -24,6 +28,7 @@ body {
   color: $black;
   font-weight: 400;
   font-style: normal;
+  background: $slightGrey;
 }
 
 a {
@@ -32,7 +37,8 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: $green;
+    color: $darkGrey;
+    font-weight: bold;
     @include transition(.4s ease-in-out);
   }
 }
