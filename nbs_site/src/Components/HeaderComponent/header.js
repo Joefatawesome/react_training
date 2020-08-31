@@ -21,7 +21,6 @@ class Header extends Component {
         canvas = null;
         this.setCanvasRef = element => {
             canvas = element;
-            //TODO: trying to position drop down before working on making the button work
         };
 
     }
