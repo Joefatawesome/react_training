@@ -12,7 +12,7 @@ import ClientForms from "./Components/Pages/clientForms";
 import AboutUs from "./Components/Pages/aboutUs";
 import ContactInfo from "./Components/Pages/contactInfo";
 
-import './Assets/css/default.min.css';
+import './Assets/scss/default.scss';
 
 class NBSWebsite extends Component {
     render() {
