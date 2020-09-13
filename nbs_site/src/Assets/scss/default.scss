@@ -1,5 +1,10 @@
 @import "config";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   position: relative;
   display: block;
@@ -37,7 +42,7 @@ header {
     }
   }
 
-  .dropbtn {
+  .dropButton {
     background-color: $darkGrey;
     color: white;
     padding: 16px;
@@ -47,7 +52,7 @@ header {
     min-width: 120px;
   }
 
-  .dropbtn:hover, .dropbtn:focus {
+  .dropButton:hover, .dropButton:focus {
     background-color: $fadedGreen;
   }
 
@@ -62,8 +67,8 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
   }
 

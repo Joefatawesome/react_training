@@ -11,6 +11,8 @@ let canvas;
 let ctx;
 
 
+const MY_DROPDOWN = "myDropdown";
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -41,17 +43,15 @@ class Header extends Component {
         ctx.fillStyle = $darkGrey;
         ctx.fillText("Norwalk Business Service", 100, 52);
     }
-
-    //TODO: Modernize here.
+    
     render() {
         function myFunction() {
             /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-            document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById(MY_DROPDOWN).classList.toggle("show");
         }
 
         window.onclick = function (event) {
-            //TODO: fix logic so it doesn't close if the user clicks within the dropDown
-            if (!event.target.matches('.dropbtn')) {
+            if (!event.target.matches(".dropButton")) {
                 const dropDowns = document.getElementsByClassName("dropdown-content");
                 let i;
                 for (i = 0; i < dropDowns.length; i++) {
@@ -66,24 +66,25 @@ class Header extends Component {
         return (
             <header>
                 <canvas ref={this.setCanvasRef} width={900} height={90}/>
+
                 <div className="dropdown" style={{float: "right"}}>
-                    <button onClick={myFunction} className="dropbtn">Dropdown</button>
+                    <button onClick={myFunction} className="dropButton">Navigation</button>
                     <div id="myDropdown" className="dropdown-content">
-                        <li className="first">
+                        <ul className="first">
                             <Link to='/'>Home</Link>
-                        </li>
-                        <li>
+                        </ul>
+                        <ul>
                             <Link to='/News'>News</Link>
-                        </li>
-                        <li>
+                        </ul>
+                        <ul>
                             <Link to={'/Forms'}>Client Forms</Link>
-                        </li>
-                        <li>
+                        </ul>
+                        <ul>
                             <Link to={'/About'}>About Us</Link>
-                        </li>
-                        <li className="last">
+                        </ul>
+                        <ul className="last">
                             <Link to='/Contact'>Contact Info</Link>
-                        </li>
+                        </ul>
                     </div>
                 </div>
             </header>
