@@ -65,7 +65,7 @@ class Header extends Component {
 
         return (
             <header>
-                <canvas ref={this.setCanvasRef} width={900} height={90}/>
+                <canvas ref={this.setCanvasRef} width={900} height={100}/>
 
                 <div className="dropdown" style={{float: "right"}}>
                     <button onClick={myFunction} className="dropButton">Navigation</button>
