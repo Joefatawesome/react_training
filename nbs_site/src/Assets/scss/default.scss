@@ -46,10 +46,11 @@ header {
     background-color: $darkGrey;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 36px;
     border: none;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 240px;
+    min-height: 100px;
   }
 
   .dropButton:hover, .dropButton:focus {
@@ -67,19 +68,21 @@ header {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 120px;
+    min-width: 240px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
   }
 
   /* Links inside the dropdown */
   .dropdown-content a {
+    font-size: 36px;
     color: black;
     text-decoration: none;
     display: block;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 5px;
+    min-height: 100px;
   }
 
   /* Change color of dropdown links on hover */
