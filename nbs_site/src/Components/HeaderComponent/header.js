@@ -43,7 +43,7 @@ class Header extends Component {
         ctx.fillStyle = $darkGrey;
         ctx.fillText("Norwalk Business Service", 100, 52);
     }
-    
+
     render() {
         function myFunction() {
             /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
@@ -65,7 +65,7 @@ class Header extends Component {
 
         return (
             <header>
-                <canvas ref={this.setCanvasRef} width={900} height={100}/>
+                <canvas ref={this.setCanvasRef} width={1225} height={100}/>
 
                 <div className="dropdown" style={{float: "right"}}>
                     <button onClick={myFunction} className="dropButton">Navigation</button>
