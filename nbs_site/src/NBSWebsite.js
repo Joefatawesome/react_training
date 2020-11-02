@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom';
 
 import Header from './Components/HeaderComponent/header';
-import Margin from "./Components/MarginComponent/margin";
 import Footer from "./Components/FooterComponent/footer";
 import HomePage from "./Components/Pages/homePage";
 import News from "./Components/Pages/newsPage";
@@ -19,11 +18,6 @@ class NBSWebsite extends Component {
     render() {
         return (
             <Router>
-                {/*<div className="margin">*/}
-                {/*    <Margin>*/}
-                {/*        Hello World*/}
-                {/*    </Margin>*/}
-                {/*</div>*/}
                 <div className="NBSWebsite">
                     <Header/>
                         <Route exact path='/' component={HomePage}/>
